@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <h1>Create New Book</h1>
+    <div class="col">
+      <form (ngSubmit)="addBook()">
+        <div class="mb-3">
+          <label for="inputName" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="inputName"
+            [(ngModel)]="inputName"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="inputDateTime" class="form-label">Year</label>
+          <input
+            type="number"
+            class="form-control"
+            id="datetime"
+            name="inputDateTIme"
+            [(ngModel)]="inputDateTime"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+      </form>
+    </div>
+  </div>
+</div>
